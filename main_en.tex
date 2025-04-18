@@ -14,11 +14,11 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage{xcolor}
-\usepackage[colorlinks=true, linkcolor=darkblue, urlcolor=darkblue, citecolor=darkblue]{hyperref}
-\definecolor{darkblue}{RGB}{0, 0, 139} % Darker than standard blue
+% \usepackage{xcolor}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+% \definecolor{darkblue}{RGB}{0, 0, 139} % Darker than standard blue
 \usepackage{fancyhdr}
-\usepackage[french]{babel}
+\usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures=TeX}
@@ -123,28 +123,28 @@
 
 
 %-----------EDUCATION-----------
-\section{Éducation}
+\section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {HES-SO, Haute École d'Ingénierie}{Sion, VS}
-      {BSc Informatique et Systèmes de communication, ingénierie des données}{Août 2022 -- Sep. 2025}
+      {HES-SO, School of Engineering}{Sion, VS}
+      {BSc Computer Science and Communication Systems, Data Engineering}{August 2022 -- Sept. 2025}
     \resumeSubheadingDouble
-      {École Professionnelle Technique et des Métiers}{Sion, VS}
-      {CFC Informaticien, systèmes et réseaux}{Août. 2018 -- Juin 2022}
-      {Maturité technique}{"}
+      {Technical and Vocational School}{Sion, VS}
+      {Federal VET Diploma in IT, Systems and Networks, \href{https://drive.google.com/file/d/1WFuTH7d8QYcOMaClUea2DzW2HeszU424/view?usp=sharing}{view certificate}}{Aug. 2018 -- June 2022}
+      {Technical Matura, \href{https://drive.google.com/file/d/1-RyMzu1c0irF1EqTaxk4OTzXyMbAzzgg/view?usp=drive_link}{view certificate}}{"}
   \resumeSubHeadingListEnd
 
 
 %-----------Experience-----------
-\section{Expérience}
+\section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {HES-SO, Infrastructure Competency Center}{Août 2021 -- Jui. 2022}
-      {Stagiaire}{Sion/Sierre, VS}
+      {HES-SO, Infrastructure Competency Center}{August 2021 -- July 2022}
+      {Intern, \href{https://drive.google.com/file/d/1JspdtGHWfH57NsNkazgo6VZaCslR6hu4/view?usp=sharing}{view certificate}}{Sion/Sierre, VS}
       \resumeItemListStart
-      \resumeItem{Designé et développé une dénomination et catégorisation automatique des machines virtuelles d'un environnement vSphere.}
-      \resumeItem{Développé une application web progressive pour faciliter la création de machines virtuelles par le corps métier et ainsi réduire la charge de travail des administrateurs système.}
+      \resumeItem{Designed and developed an automatic naming and categorization system for virtual machines in a vSphere environment.}
+      \resumeItem{Developed a progressive web application to facilitate the creation of virtual machines by business users, thereby reducing the workload of system administrators.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -152,64 +152,63 @@
 
 
 %-----------Extracurriculars-----------
-\section{Activités Annexes}
+\section{Extracurricular Activities}
   \resumeSubHeadingListStart
 
   \resumeSubheading
-    {Promotion des métiers}{Août 2022 --}
-    {Animateurs}{VS}
+    {Career Promotion}{August 2022 --}
+    {Facilitator}{VS}
     \resumeItemListStart
-        \resumeItem{Présenté les opportunités de formation permettant d’accéder au niveau universitaire, en expliquant les parcours possibles aux jeunes.}
-        \resumeItem{Sensibilisé les élèves à l’intelligence artificielle, en
-        exposant l’état actuel du domaine et ses applications concrètes.}
-        \resumeItem{Assuré la promotion de la filière auprès d’un public jeune, en animant des stands et en échangeant sur les métiers du secteur.}
+        \resumeItem{Presented educational opportunities that provide access to university-level education, explaining possible career paths to young people.}
+        \resumeItem{Raised awareness among students about artificial intelligence, presenting the current state of the field and its practical applications.}
+        \resumeItem{Promoted the program to young audiences by managing information booths and engaging in discussions about careers in the sector.}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Communication HES-SO Valais/Wallis}{Août 2024 -- Sep. 2025}
-      {Ambassadeur}{VS}
+      {HES-SO Valais/Wallis Communications}{August 2024 -- Sept. 2025}
+      {Ambassador}{VS}
       \resumeItemListStart
-      \resumeItem{Créé du contenu visuel et vidéo pour Instagram et TikTok, en lien avec la vie étudiante et les activités sur le campus universitaire.}
+      \resumeItem{Created visual and video content for Instagram and TikTok related to student life and campus activities.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 % -----------Skill and Interests-----------
-% \section{Qualités \& Intérêts}
+% \section{Skills \& Interests}
 %  \begin{itemize}[leftmargin=0.15in, label={}]
 %     \small{\item{
 %     \vspace{1mm}
-%      \textbf{Compétences}{: } \\
+%      \textbf{Skills}{: } \\
 %      \vspace{1mm}
-%      \textbf{Intérêts}{: Photography, Creative Writing, Archery, New York Knicks} \\
+%      \textbf{Interests}{: Photography, Creative Writing, Archery, New York Knicks} \\
 %      \vspace{1mm}
 
 %     }}
 %  \end{itemize}
 
 % Projects
-\section{Projets}
+\section{Projects}
 \resumeProjectListStart
 \resumeProjectHeading
     {Adaptive Mesh Refinement}{\href{https://github.com/dij0s/AMR}{github.com/dij0s/AMR}}
-    {Projet académique}
+    {Academic Project}
     \resumeItemListStart
-        \resumeItem{Développé un algorithme d'adaptation dynamique de maillage (AMR) en Python, optimisant les ressources de calcul avec une réduction de 89\% du temps d'exécution.}
-        \resumeItem{Implémenté une structure de données Quadtree/Octree efficace pour la simulation numérique, avec une réduction de 80\% de l'utilisation mémoire.}
-        \resumeItem{Résolu des équations de diffusion thermique avec un schéma aux différences finies du second ordre, validé par comparaison avec une solution de référence.}
-        \resumeItem{Appliqué des pratiques de développement professionnel incluant des tests unitaires étendus, l'intégration continue (GitHub Actions) et une documentation technique détaillée.}
+        \resumeItem{Developed an Adaptive Mesh Refinement (AMR) algorithm in Python, optimizing computational resources with a $\sim95\%$ reduction in execution time.}
+        \resumeItem{Implemented an efficient Quadtree/Octree data structure for numerical simulation, with a $\sim92\%$ reduction in memory usage.}
+        \resumeItem{Solved heat diffusion equations using a second-order finite difference scheme, validated by comparison with a reference solution.}
+        \resumeItem{Applied professional development practices including extensive unit testing, continuous integration (GitHub Actions), and detailed technical documentation.}
     \resumeItemListEnd
     \vspace{1mm}
 
 \resumeProjectHeading
     {Autopilot Driver Genetic Algorithm}{\href{https://github.com/dij0s/AdGA}{github.com/dij0s/AdGA}}
-    {Projet académique}
+    {Academic Project}
     \resumeItemListStart
-    \resumeItem{Conçu et implémenté un framework distribué d'optimisation de trajectoires pour pilote automatique utilisant des algorithmes génétiques.}
-           \resumeItem{Développé un système de parallélisation massive sur supercalculateur via SLURM, permettant l'optimisation simultanée de multiples trajectoires.}
-           \resumeItem{Développé une heuristique d'évaluation des trajectoires basée sur les principes de conduite automobile optimale.}
-           \resumeItem{Mis en place une architecture évolutive permettant le passage à l'échelle des calculs d'optimisation sur des clusters de calcul à l'aide de Kubernetes.}
-           \resumeItem{Implémenté des algorithmes génétiques pour l'optimisation multi-objectifs des trajectoires de conduite autonome.}
+    \resumeItem{Designed and implemented a distributed framework for trajectory optimization for autopilot using genetic algorithms.}
+           \resumeItem{Developed a massive parallelization system on supercomputer via SLURM, allowing simultaneous optimization of multiple trajectories.}
+           \resumeItem{Developed a trajectory evaluation heuristic based on optimal driving principles.}
+           \resumeItem{Established a scalable architecture enabling computation scaling on calculation clusters using Kubernetes.}
+           \resumeItem{Implemented genetic algorithms for multi-objective optimization of autonomous driving trajectories.}
     \resumeItemListEnd
 \resumeProjectListEnd
 
@@ -219,7 +218,8 @@
 \small +41 78 742 1190 $|$
 \href{mailto:dion.08osmani@gmail.com}{dion.08osmani@gmail.com} $|$
 \href{https://www.linkedin.com/in/dion-osmani-60478720b/}{linkedin.com} $|$
-\href{https://github.com/dij0s/}{github.com}
+\href{https://github.com/dij0s/}{github.com} $|$
+\href{https://dionosmani.vercel.app}{dionosmani.vercel.app}
 \end{center}
 
 
