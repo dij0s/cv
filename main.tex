@@ -14,9 +14,11 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, linkcolor=darkblue, urlcolor=darkblue, citecolor=darkblue]{hyperref}
+\definecolor{darkblue}{RGB}{0, 0, 139} % Darker than standard blue
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
+\usepackage[french]{babel}
 \usepackage{tabularx}
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures=TeX}
@@ -58,7 +60,6 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
@@ -75,6 +76,15 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingDouble}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -82,10 +92,11 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
-    \item
+\newcommand{\resumeProjectHeading}[3]{
+\vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \space \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -95,6 +106,8 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
@@ -105,124 +118,105 @@
 \begin{document}
 
 \begin{center}
-    \textbf{\Huge \scshape Andrew Ryan}
+    \textbf{\Huge \scshape Dion Osmani}
 \end{center}
 
 
 %-----------EDUCATION-----------
-\section{Education}
+\section{Éducation}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Brooklyn Technical High School}{Brooklyn, NY}
-      {GPA 3.76, Class rank 63/350, SAT 1510}{Sept. 2021 -- Jun 2025}
-  \resumeSubHeadingListEnd
-
-
-%-----------Extracurriculars-----------
-\section{Extracurricular Activities}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Student Government}{Sept. 2023 -- Jun. 2024}
-      {Treasurer}{Brooklyn, NY}
-      \resumeItemListStart
-        \resumeItem{Developed budget proposals, collaborating with the student government team to plan major school events.}
-        \resumeItem{Organized and led fundraising events, \textbf{raising over \$5,000} for school activities and projects.}
-        \resumeItem{Managed the student government budget, ensuring accurate tracking and allocation of funds.}
-
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Math Team}{Sept. 2022 -- Present}
-      {Team Captain}{Brooklyn, NY}
-      \resumeItemListStart
-        \resumeItem{Competed in regional, state, and national-level math competitions\textbf{(NYCIML, NYCMTS).}}
-        \resumeItem{Facilitated weekly study sessions to discuss high-level \textbf{Probability Theory, Geometry \& Algebra.}}
-        \resumeItem{Led a 26-member math team as captain, overseeing strategy development and competition preparation.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Varsity Swim Team}{Sep. 2021 -- June 2024}
-      {Team Captain}{Brooklyn, NY}
-      \resumeItemListStart
-        \resumeItem{Led the varsity swim team to its \textbf{inaugural section championship} through leadership and strategic planning.}
-        \resumeItem{Mentored junior team members, providing guidance on proper techniques, race preparation, and sportsmanship.}
-    \resumeItemListEnd
-
+      {HES-SO, Haute École d'Ingénierie}{Sion, VS}
+      {BSc Informatique et Systèmes de communication, ingénierie des données}{Août 2022 -- Sep. 2025}
+    \resumeSubheadingDouble
+      {École Professionnelle Technique et des Métiers}{Sion, VS}
+      {CFC Informaticien, systèmes et réseaux}{Août. 2018 -- Juin 2022}
+      {Maturité technique}{"}
   \resumeSubHeadingListEnd
 
 
 %-----------Experience-----------
-\section{Experience}
+\section{Expérience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {FlexiDip}{June 2024 -- Present}
-      {Co-Founder}{Ann Arbor, MI}
+      {HES-SO, Infrastructure Competency Center}{Août 2021 -- Jui. 2022}
+      {Stagiaire}{Sion/Sierre, VS}
       \resumeItemListStart
-        \resumeItem{\textbf{Co-founded startup} specializing in adjustable dipping containers, optimizing buffalo wing dining experience.}
-        \resumeItem{Developed minimum viable product(MVP) capable of early-stage revenue generation.}
-        \resumeItem{Received positive feedback from established brands like Buffalo Wild Wings for innovative sauce holder designs.}
-        \resumeItem{Validated startup idea through market research and interview feedback as a part of Launch-X U-Michigan.}
+      \resumeItem{Designé et développé une dénomination et catégorisation automatique des machines virtuelles d'un environnement vSphere.}
+      \resumeItem{Développé une application web progressive pour faciliter la création de machines virtuelles par le corps métier et ainsi réduire la charge de travail des administrateurs système.}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {Private Math Tutor}{Sept. 2021 -- Present}
-      {Team Captain}{Brooklyn, NY}
-      \resumeItemListStart
-        \resumeItem{Provided personalized tutoring sessions in algebra, calculus, and geometry to elementary \& middle-school students}
-        \resumeItem{Developed lesson plans for diverse learning styles, leading to improvements by \textbf{upwards of 1.5 letter grades}.}
-        \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
-\section{Awards}
-    \resumeSubHeadingListStart
-      \resumeSubheading
-      {Speedo Scholastic All-American}{Aug. 2023 -- Present}
-      {}{}
-      \resumeItemListStart
-      \vspace{-4mm}
-        \resumeItem{National award given to student-athletes who achieve a \textbf{national time standard }while maintaining a 3.5+ GPA.}
-      \resumeItemListEnd
+
+%-----------Extracurriculars-----------
+\section{Activités Annexes}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Promotion des métiers}{Août 2022 --}
+    {Animateurs}{VS}
+    \resumeItemListStart
+        \resumeItem{Présenté les opportunités de formation permettant d’accéder au niveau universitaire, en expliquant les parcours possibles aux jeunes.}
+        \resumeItem{Sensibilisé les élèves à l’intelligence artificielle, en exposant l’état actuel du domaine et ses applications concrètes.}
+        \resumeItem{Assuré la promotion de la filière auprès d’un public jeune, en animant des stands et en échangeant sur les métiers du secteur.}
+    \resumeItemListEnd
 
     \resumeSubheading
-      {National Junior Honor Society}{June 2023 -- Present}
-      {}{}
+      {Communication HES-SO Valais/Wallis}{Août 2024 -- Sep. 2025}
+      {Ambassadeur}{VS}
       \resumeItemListStart
-      \vspace{-4mm}
-        \resumeItem{Award presented to students with outstanding achievements in academics, leadership, and community service.}
+      \resumeItem{Créé du contenu visuel et vidéo pour Instagram et TikTok, en lien avec la vie étudiante et les activités sur le campus universitaire.}
       \resumeItemListEnd
-    \resumeSubHeadingListEnd
 
-%-----------Courses-----------
-\section{Classes}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
+  \resumeSubHeadingListEnd
+
+% -----------Skill and Interests-----------
+% \section{Qualités \& Intérêts}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%     \vspace{1mm}
+%      \textbf{Compétences}{: } \\
+%      \vspace{1mm}
+%      \textbf{Intérêts}{: Photography, Creative Writing, Archery, New York Knicks} \\
+%      \vspace{1mm}
+
+%     }}
+%  \end{itemize}
+
+% Projects
+\section{Projets}
+
+
+\resumeProjectListStart
+\resumeProjectHeading
+    {Adaptive Mesh Refinement}{\href{https://github.com/dij0s/AMR}{github.com/dij0s/AMR}}
+    {Académique}
+    \resumeItemListStart
+        \resumeItem{Description du projet}
+        \resumeItem{Rôle du projet}
+    \resumeItemListEnd
     \vspace{1mm}
-     \textbf{Courses}{: AP Calulus BC, AP Chemistry, AP Physics, AP World History, AP U.S. History, AP Statistics, AP Literature} \\
 
-    }}
- \end{itemize}
 
-%-----------Skill and Interests-----------
-\section{Skills \& Interests}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
+\resumeProjectHeading
+    {Autopilot Driver Genetic Algorithm}{2023 -- 2024}
+    {Académique}
+    \resumeItemListStart
+        \resumeItem{Description du projet}
+        \resumeItem{Rôle du projet}
+    \resumeItemListEnd
     \vspace{1mm}
-     \textbf{Skills}{: Probability Theory, Web Design, Microsoft Excel, Microsoft Office} \\
-     \vspace{1mm}
-     \textbf{Interests}{: Photography, Creative Writing, Archery, New York Knicks} \\
-     \vspace{1mm}
 
-    }}
- \end{itemize}
- \begin{center}
+\resumeProjectListEnd
 
-\small 123-456-7890 $|$
-\href{mailto:ADD EMAIL HERE@x.com}{\underline{andrew@gmail.com}} $|$
-\href{ADD LINKEDIN PAGE HERE}{\underline{linkedin.com/in/andrew}}
+\begin{center}
+\small +41 78 742 1190 $|$
+\href{mailto:dion.08osmani@gmail.com}{dion.08osmani@gmail.com} $|$
+\href{https://www.linkedin.com/in/dion-osmani-60478720b/}{linkedin.com/in/dion-osmani} $|$
+\href{https://github.com/dij0s/}{github.com}
 \end{center}
 
 
