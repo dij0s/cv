@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+% \usepackage{xcolor}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+% \definecolor{darkblue}{RGB}{0, 0, 139} % Darker than standard blue
+\usepackage{fancyhdr}
+\usepackage[french]{babel}
+\usepackage{tabularx}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingDouble}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[3]{
+\vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \space \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeProjectListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Dion Osmani}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Éducation}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {HES-SO, Haute École d'Ingénierie}{Sion, VS}
+      {BSc Informatique et Systèmes de communication, ingénierie des données}{Août 2022 -- Sep. 2025}
+    \resumeSubheadingDouble
+      {École Professionnelle Technique et des Métiers}{Sion, VS}
+      {CFC Informaticien, systèmes et réseaux, \href{https://drive.google.com/file/d/1WFuTH7d8QYcOMaClUea2DzW2HeszU424/view?usp=sharing}{voir certificat}}{Août. 2018 -- Juin 2022}
+      {Maturité technique, \href{https://drive.google.com/file/d/1-RyMzu1c0irF1EqTaxk4OTzXyMbAzzgg/view?usp=drive_link}{voir certificat}}{"}
+  \resumeSubHeadingListEnd
+
+
+%-----------Experience-----------
+\section{Expérience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {HES-SO, Infrastructure Competency Center}{Août 2021 -- Jui. 2022}
+      {Stagiaire, \href{https://drive.google.com/file/d/1JspdtGHWfH57NsNkazgo6VZaCslR6hu4/view?usp=sharing}{voir certificat}}{Sion/Sierre, VS}
+      \resumeItemListStart
+      \resumeItem{Designé et développé une dénomination et catégorisation automatique des machines virtuelles d'un environnement vSphere.}
+      \resumeItem{Développé une application web progressive pour faciliter la création de machines virtuelles par le corps métier et ainsi réduire la charge de travail des administrateurs système.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------Extracurriculars-----------
+\section{Activités Annexes}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Promotion des métiers}{Août 2022 --}
+    {Animateurs}{VS}
+    \resumeItemListStart
+        \resumeItem{Présenté les opportunités de formation permettant d’accéder au niveau universitaire, en expliquant les parcours possibles aux jeunes.}
+        \resumeItem{Sensibilisé les élèves à l’intelligence artificielle, en
+        exposant l’état actuel du domaine et ses applications concrètes.}
+        \resumeItem{Assuré la promotion de la filière auprès d’un public jeune, en animant des stands et en échangeant sur les métiers du secteur.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Communication HES-SO Valais/Wallis}{Août 2024 -- Sep. 2025}
+      {Ambassadeur}{VS}
+      \resumeItemListStart
+      \resumeItem{Créé du contenu visuel et vidéo pour Instagram et TikTok, en lien avec la vie étudiante et les activités sur le campus universitaire.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% -----------Skill and Interests-----------
+% \section{Qualités \& Intérêts}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%     \vspace{1mm}
+%      \textbf{Compétences}{: } \\
+%      \vspace{1mm}
+%      \textbf{Intérêts}{: Photography, Creative Writing, Archery, New York Knicks} \\
+%      \vspace{1mm}
+
+%     }}
+%  \end{itemize}
+
+% Projects
+\section{Projets}
+\resumeProjectListStart
+\resumeProjectHeading
+    {Adaptive Mesh Refinement}{\href{https://github.com/dij0s/AMR}{github.com/dij0s/AMR}}
+    {Projet académique}
+    \resumeItemListStart
+        \resumeItem{Développé un algorithme d'adaptation dynamique de maillage (AMR) en Python, optimisant les ressources de calcul avec une réduction de $\sim95\%$ du temps d'exécution.}
+        \resumeItem{Implémenté une structure de données Quadtree/Octree efficace pour la simulation numérique, avec une réduction de $\sim92\%$ de l'utilisation mémoire.}
+        \resumeItem{Résolu des équations de diffusion thermique avec un schéma aux différences finies du second ordre, validé par comparaison avec une solution de référence.}
+        \resumeItem{Appliqué des pratiques de développement professionnel incluant des tests unitaires étendus, l'intégration continue (GitHub Actions) et une documentation technique détaillée.}
+    \resumeItemListEnd
+    \vspace{1mm}
+
+\resumeProjectHeading
+    {Autopilot Driver Genetic Algorithm}{\href{https://github.com/dij0s/AdGA}{github.com/dij0s/AdGA}}
+    {Projet académique}
+    \resumeItemListStart
+    \resumeItem{Conçu et implémenté un framework distribué d'optimisation de trajectoires pour pilote automatique utilisant des algorithmes génétiques.}
+           \resumeItem{Développé un système de parallélisation massive sur supercalculateur via SLURM, permettant l'optimisation simultanée de multiples trajectoires.}
+           \resumeItem{Développé une heuristique d'évaluation des trajectoires basée sur les principes de conduite automobile optimale.}
+           \resumeItem{Mis en place une architecture évolutive permettant le passage à l'échelle des calculs d'optimisation sur des clusters de calcul à l'aide de Kubernetes.}
+           \resumeItem{Implémenté des algorithmes génétiques pour l'optimisation multi-objectifs des trajectoires de conduite autonome.}
+    \resumeItemListEnd
+\resumeProjectListEnd
+
+\vspace{5mm}
+
+\begin{center}
+\small +41 78 742 1190 $|$
+\href{mailto:dion.08osmani@gmail.com}{dion.08osmani@gmail.com} $|$
+\href{https://www.linkedin.com/in/dion-osmani-60478720b/}{linkedin.com} $|$
+\href{https://github.com/dij0s/}{github.com} $|$
+\href{https://dionosmani.vercel.app}{dionosmani.vercel.app}
+\end{center}
+
+
+\end{document}
