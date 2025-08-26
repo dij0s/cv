@@ -417,9 +417,9 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 13
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 197.
+(Font)              <7> on input line 203.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 197.
+(Font)              <5> on input line 203.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -435,4 +435,4 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package rerunfilecheck Info: File `main_fr.out' has not changed.
 (rerunfilecheck)             Checksum: 959D5CFA0C8F46419743A0FF46288F08;399.
  )
-Output written on main_fr.xdv (1 page, 34144 bytes).
+Output written on main_fr.xdv (1 page, 35088 bytes).
